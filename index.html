@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelBloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PixelBloom</h1>
+        <p>Explore a collection of stunning images from around the world.</p>        
+        <div class="search-container">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search for images..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="nature">Nature</button>
+            <button class="filter-btn" data-category="people">People</button>
+            <button class="filter-btn" data-category="architecture">Architecture</button>
+        </div>
+
+        <div class="loading-spinner" id="loading-spinner">
+            <div class="spinner"></div>
+        </div>
+
+        <div class="error-message" id="error-message"></div>
+
+        <div class="gallery"></div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img src="" alt="" class="lightbox-img">
+        <div class="lightbox-caption"></div>
+        <button class="nav-btn prev-btn">&lt;</button>
+        <button class="nav-btn next-btn">&gt;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
